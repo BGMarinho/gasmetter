@@ -1,5 +1,5 @@
 import type { Metadata } from 'next'
-import layout from './globals.module.scss'
+import layout from './layout.module.scss'
 
 export const metadata: Metadata = {
   title: 'Gasmetter | Because gas metters!',
