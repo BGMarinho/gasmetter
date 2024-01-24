@@ -1,5 +1,5 @@
 import type { Metadata } from 'next'
-import './globals.scss'
+import layout from './globals.module.scss'
 
 export const metadata: Metadata = {
   title: 'Gasmetter | Because gas metters!',
@@ -13,7 +13,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body>{children}</body>
+      <body className={layout.layout}>{children}</body>
     </html>
   )
 }
