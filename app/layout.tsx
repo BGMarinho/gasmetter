@@ -2,7 +2,7 @@ import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
   title: 'Gasmetter | Because gas metters!',
-  description: 'Manage costs and consume of gas.',
+  description: 'Manage costs and consume of gas.'
 }
 
 export default function RootLayout({
