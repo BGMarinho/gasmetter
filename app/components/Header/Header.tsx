@@ -1,5 +1,9 @@
 import styles from "./header.module.scss";
 
 export default function Header() {
-  return <div className={styles.header}>header</div>;
+  return (
+    <header className={styles.header}>
+      <h1 className="title">Gasmetter</h1>
+    </header>
+  );
 }
