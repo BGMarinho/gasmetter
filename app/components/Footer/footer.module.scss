@@ -1,0 +1,14 @@
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+    background-color: #000000;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+.info {
+    color: #ffffff;
+    font-size: 0.5rem;
+}
