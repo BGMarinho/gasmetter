@@ -1,6 +1,7 @@
-'use client';
 import * as S from './styles';
 
 export default function NewFueling() {
-  return <S.Container>Card de novo abastecimento</S.Container>;
+  return (
+    <S.NewFuelingContainer>Card de novo abastecimento</S.NewFuelingContainer>
+  );
 }
