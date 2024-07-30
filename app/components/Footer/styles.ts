@@ -5,6 +5,4 @@ export const FooterWrapper = styled.section`
   bottom: 0;
 `;
 
-export const SocialIcons = styled.div`
-  display: flex;
-`;
+export const SocialNetworks = styled.div``;
