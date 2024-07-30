@@ -4,4 +4,7 @@ export const SocialIconContainer = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
+  a {
+    all: unset;
+  }
 `;

@@ -16,6 +16,7 @@ export default function SocialIcon({
     <S.SocialIconContainer>
       <Link href={link}>
         <Image src={src} alt={alt} width={width} height={height} />
+        <p>{alt}</p>
       </Link>
     </S.SocialIconContainer>
   );
