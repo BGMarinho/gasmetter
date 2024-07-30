@@ -4,7 +4,6 @@ import SocialIcon from './SocialIcon';
 
 export default function Footer() {
   const icons = useIcon();
-  console.log(icons);
   return (
     <S.FooterWrapper>
       <S.SocialNetworks>
