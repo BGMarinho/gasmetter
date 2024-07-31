@@ -20,7 +20,7 @@ export default function Footer() {
       </S.SocialNetworks>
       <S.Information>
         <span>
-          Developed by <a href="https://github.com/BGMarinho">BGMarinho__</a>
+          Desenvolvido por <a href="https://github.com/BGMarinho">BGMarinho</a>{' '}
         </span>
       </S.Information>
     </S.FooterWrapper>
