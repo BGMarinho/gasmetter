@@ -29,5 +29,6 @@ export const Information = styled.div`
   font-size: 0.75rem;
   a {
     all: unset;
+    /* color: #191970; */
   }
 `;
