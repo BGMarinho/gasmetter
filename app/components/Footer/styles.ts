@@ -6,6 +6,7 @@ export const FooterWrapper = styled.section`
   left: 0;
   width: 100%;
   display: flex;
+  flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
   background-color: #000000;
@@ -13,14 +14,15 @@ export const FooterWrapper = styled.section`
   border-top: 5px solid #191970;
   line-height: 1rem;
   font-size: 0.75rem;
+  padding: 0.5rem 0rem;
+  gap: 1rem;
 `;
 
 export const SocialNetworks = styled.div`
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: start;
-  height: fit-content;
+  gap: 1rem;
 `;
 
 export const Information = styled.div`

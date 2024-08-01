@@ -6,6 +6,12 @@ export default function Footer() {
   const icons = useIcon();
   return (
     <S.FooterWrapper>
+      <S.Information>
+        <span>
+          Copyright © 2024 <a href="https://github.com/BGMarinho">BGMarinho</a>
+          . Todos os direitos reservados.
+        </span>
+      </S.Information>
       <S.SocialNetworks>
         {icons.map((icon, index) => (
           <SocialIcon
@@ -18,11 +24,6 @@ export default function Footer() {
           />
         ))}
       </S.SocialNetworks>
-      <S.Information>
-        <span>
-          Desenvolvido por <a href="https://github.com/BGMarinho">BGMarinho</a>{' '}
-        </span>
-      </S.Information>
     </S.FooterWrapper>
   );
 }
