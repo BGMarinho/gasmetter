@@ -5,7 +5,7 @@ import Footer from './components/Footer';
 
 export default function Home() {
   return (
-    <main>
+    <main style={{ width: '100vw' }}>
       <TopBar />
       <NewFueling />
       <Footer />
