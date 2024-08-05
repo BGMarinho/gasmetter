@@ -4,5 +4,5 @@ export const TopBarWrapper = styled.section`
   display: flex;
   justify-content: center;
   align-items: center;
-  border-bottom: 3px solid #808080;
+  border-bottom: 1px solid #808080;
 `;
