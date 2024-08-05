@@ -1,16 +1,18 @@
 import Link from 'next/link';
+import * as S from './styles';
 
 interface TopButtonProps {
   Title: string;
   Href: string;
   isDisabled: boolean;
-  // onClick: () => void;
 }
 
 export default function TopButton({ Title, Href, isDisabled }: TopButtonProps) {
   return (
-    <Link href={Href}>
-      <button disabled={isDisabled}>{Title}</button>
-    </Link>
+    <S.TopButtonContainer>
+      <Link href={Href} style={{ all: 'unset' }}>
+        <S.TopButton disabled={isDisabled}>{Title}</S.TopButton>
+      </Link>
+    </S.TopButtonContainer>
   );
 }
