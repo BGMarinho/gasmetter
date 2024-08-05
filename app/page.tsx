@@ -1,13 +1,13 @@
 'use client';
 import TopBar from './components/TopBar';
-import NewFueling from './components/NewFueling';
+import Fueling from './components/Fueling';
 import Footer from './components/Footer';
 
 export default function Home() {
   return (
     <main style={{ width: '100vw' }}>
       <TopBar />
-      <NewFueling />
+      <Fueling />
       <Footer />
     </main>
   );
