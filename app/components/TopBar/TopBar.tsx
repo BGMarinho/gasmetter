@@ -4,7 +4,7 @@ import TopButton from './TopButton';
 export default function TopBar() {
   const buttonContent = [
     {
-      Title: 'Novo Abastecimento',
+      Title: 'Abastecimento',
       Href: '#',
       isDisabled: false,
     },
