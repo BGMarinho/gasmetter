@@ -1,14 +1,19 @@
 'use client';
+import styled from 'styled-components';
 import TopBar from './components/TopBar';
-import NewFueling from './components/NewFueling';
+import Fueling from './components/Fueling';
 import Footer from './components/Footer';
+
+const MainContent = styled.main`
+  display: grid;
+`;
 
 export default function Home() {
   return (
-    <main style={{ width: '100vw' }}>
+    <MainContent>
       <TopBar />
-      <NewFueling />
+      <Fueling />
       <Footer />
-    </main>
+    </MainContent>
   );
 }

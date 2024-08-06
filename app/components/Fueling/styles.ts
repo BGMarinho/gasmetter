@@ -1,8 +1,9 @@
 import styled from 'styled-components';
 
-export const TopBarWrapper = styled.section`
+export const FuelingSection = styled.section`
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  border-bottom: 1px solid #808080;
+  width: 100%;
 `;
