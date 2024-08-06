@@ -1,6 +1,6 @@
-import * as S from './styles';
-import { useIcon } from '@/app/helpers/useIcon';
 import SocialIcon from './SocialIcon';
+import { useIcon } from '@/app/helpers/useIcon';
+import * as S from './styles';
 
 export default function Footer() {
   const icons = useIcon();
