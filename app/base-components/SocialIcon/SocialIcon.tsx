@@ -1,9 +1,15 @@
 import React from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
-
-import { SocialIconProps } from './interfaces';
 import * as S from './styles';
+
+export interface SocialIconProps {
+  link: string;
+  src: string;
+  alt: string;
+  width: number;
+  height: number;
+}
 
 export default function SocialIcon({
   link,
