@@ -9,10 +9,10 @@ interface TopButtonProps {
 
 export default function TopButton({ Title, Href, isDisabled }: TopButtonProps) {
   return (
-    <S.TopButtonContainer>
+    <S.ButtonContainer>
       <Link href={Href} style={{ all: 'unset' }}>
-        <S.TopButton disabled={isDisabled}>{Title}</S.TopButton>
+        <S.Button disabled={isDisabled}>{Title}</S.Button>
       </Link>
-    </S.TopButtonContainer>
+    </S.ButtonContainer>
   );
 }

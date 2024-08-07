@@ -1,8 +1,8 @@
-import TopButton from './TopButton';
+import Button from '../../base-components/Button';
 import * as S from './styles';
 
 export default function TopBar() {
-  const buttonContent = [
+  const topButtonsContent = [
     {
       Title: 'Abastecimento',
       Href: '#',
@@ -17,8 +17,8 @@ export default function TopBar() {
 
   return (
     <S.TopBarWrapper>
-      {buttonContent.map((button, index) => (
-        <TopButton
+      {topButtonsContent.map((button, index) => (
+        <Button
           key={index}
           Title={button.Title}
           Href={button.Href}

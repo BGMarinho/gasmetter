@@ -1,4 +1,4 @@
-import SocialIcon from './SocialIcon';
+import SocialIcon from '../../base-components/SocialIcon';
 import { useIcon } from '@/app/helpers/useIcon';
 import * as S from './styles';
 
