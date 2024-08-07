@@ -9,7 +9,6 @@ export const FooterWrapper = styled.section`
   align-items: center;
   background-color: #000000;
   color: #ffffff;
-  border-top: 1px solid #808080;
   line-height: 1rem;
   font-size: 0.75rem;
   padding: 0.5rem 0rem 0.75rem 0rem;
