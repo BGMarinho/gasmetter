@@ -20,6 +20,7 @@
 .DS_Store
 *.pem
 css-grid.txt
+css-box-shadow.txt
 
 # debug
 npm-debug.log*
