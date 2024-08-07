@@ -1,5 +1,5 @@
-import * as S from './styles';
 import FuelingCard from './FuelingCard';
+import * as S from './styles';
 
 export default function Fueling() {
   return (

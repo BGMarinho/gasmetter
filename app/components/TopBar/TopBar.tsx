@@ -1,5 +1,5 @@
-import * as S from './styles';
 import TopButton from './TopButton';
+import * as S from './styles';
 
 export default function TopBar() {
   const buttonContent = [
