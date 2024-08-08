@@ -1,11 +1,13 @@
-import FuelingCard from '../../components/Card';
+import Card from '../../components/Card';
+import Formulary from '@/app/components/Formulary/Formulary';
 import * as S from './styles';
 
 export default function Fueling() {
   return (
     <S.FuelingSection>
-      {/* FuelingCard pode, futuramente, virar Card. */}
-      <FuelingCard />
+      <Card>
+        <Formulary />
+      </Card>
     </S.FuelingSection>
   );
 }

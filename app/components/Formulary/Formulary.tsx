@@ -1,7 +1,9 @@
 import * as S from './styles';
 interface FormularyProps {}
 export default function Formulary() {
-  return <S.FormularyWrapper>oioio</S.FormularyWrapper>;
+  return (
+    <S.FormularyWrapper>oioio vai po caralho se funcionar</S.FormularyWrapper>
+  );
 }
 
 {
