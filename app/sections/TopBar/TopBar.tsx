@@ -20,7 +20,7 @@ export default function TopBar() {
           key={index}
           title={button.title}
           isDisabled={button.isDisabled}
-          centralizedText={false}
+          centralizedText={true}
         />
       ))}
     </S.TopBarWrapper>

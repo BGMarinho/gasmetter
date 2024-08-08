@@ -2,7 +2,7 @@ import * as S from './styles';
 
 interface ButtonProps {
   title: string;
-  centralizedText?: boolean;
+  centralize?: boolean;
   uppercase?: boolean;
   isDisabled?: boolean;
   onClick?: () => void;
@@ -10,13 +10,13 @@ interface ButtonProps {
 
 export default function Button({
   title,
-  centralizedText,
+  centralize,
   uppercase,
   isDisabled,
   onClick,
 }: ButtonProps) {
   return (
-    <S.ButtonContainer centralizedText={centralizedText}>
+    <S.ButtonContainer centralize={centralize}>
       <S.Button disabled={isDisabled} onClick={onClick} uppercase={uppercase}>
         {title}
       </S.Button>

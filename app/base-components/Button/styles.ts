@@ -1,11 +1,11 @@
 import styled from 'styled-components';
 
 export const ButtonContainer = styled.div<{
-  centralizedText: boolean | undefined;
+  centralize: boolean | undefined;
 }>`
   display: flex;
-  justify-content: ${({ centralizedText }) =>
-    centralizedText ? 'center' : 'flex-start'};
+  justify-content: ${({ centralize }) =>
+    centralize ? 'center' : 'flex-start'};
   align-items: center;
   width: 100%;
 `;
