@@ -21,8 +21,8 @@ export default function TopBar() {
         <Button
           key={index}
           Title={button.Title}
-          Href={button.Href}
           isDisabled={button.isDisabled}
+          centralizedText
         />
       ))}
     </S.TopBarWrapper>

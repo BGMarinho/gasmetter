@@ -1,8 +1,12 @@
 import styled from 'styled-components';
 
-export const FormularyWrapper = styled.div`
-  /* display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: flex-start; */
+export const FormularyWrapper = styled.form``;
+
+export const FormularyInfo = styled.div`
+  h1 {
+    font-size: 2rem;
+  }
+  p {
+    font-size: 1rem;
+  }
 `;

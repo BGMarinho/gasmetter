@@ -1,23 +1,24 @@
+import { PropsWithChildren } from 'react';
 import Button from '@/app/base-components/Button';
 import * as S from './styles';
 
-interface FormularyProps {}
+interface FormularyProps {
+  Title?: string;
+  Instructions?: string;
+  Action?: string;
+}
 
-export default function Formulary() {
+export default function Formulary(
+  { Title, Instructions, Action }: FormularyProps,
+  { children }: PropsWithChildren,
+) {
   return (
-    <S.FormularyWrapper>
-      <h1>Titulo</h1>
-      <p>frase para introduzir o preenchimento do form</p>
-      <form action="">
-        <label htmlFor="">posto</label>
-        <input type="text" />
-        <label htmlFor="">valor por litro</label>
-        <input type="number" />
-        <label htmlFor="">valor abastecido</label>
-        <input type="number" />
-        <label htmlFor="">tipo de combustível</label>
-        <input type="text" />
-      </form>
+    <S.FormularyWrapper action={Action}>
+      <S.FormularyInfo>
+        <h1>{Title}</h1>
+        <p>{Instructions}</p>
+      </S.FormularyInfo>
+      {children}
       <Button Title="Salvar" />
     </S.FormularyWrapper>
   );
