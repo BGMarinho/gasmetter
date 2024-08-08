@@ -17,9 +17,13 @@ export default function Button({
 }: ButtonProps) {
   return (
     <S.ButtonContainer centralize={centralize}>
-      <S.Button disabled={disabled} onClick={onClick} caption={caption}>
-        {title}
-      </S.Button>
+      {!disabled ? (
+        <S.Button onClick={onClick} caption={caption}>
+          {title}
+        </S.Button>
+      ) : (
+        <S.Button disabled>{title}</S.Button>
+      )}
     </S.ButtonContainer>
   );
 }
