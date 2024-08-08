@@ -17,8 +17,8 @@ export default function Formulary() {
         <input type="number" />
         <label htmlFor="">tipo de combustível</label>
         <input type="text" />
-        <Button Title="Salvar" Href="#" />
       </form>
+      <Button Title="Salvar" />
     </S.FormularyWrapper>
   );
 }

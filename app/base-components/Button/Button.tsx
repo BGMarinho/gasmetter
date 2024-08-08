@@ -1,26 +1,25 @@
-import Link from 'next/link';
 import * as S from './styles';
 
 interface ButtonProps {
   Title: string;
-  Href: string;
+  centralizedText?: boolean;
+  uppercase?: boolean;
   isDisabled?: boolean;
   onClick?: () => void;
 }
 
 export default function Button({
   Title,
-  Href,
+  centralizedText,
+  uppercase,
   isDisabled,
   onClick,
 }: ButtonProps) {
   return (
-    <S.ButtonContainer>
-      <Link href={Href} style={{ all: 'unset' }}>
-        <S.Button disabled={isDisabled} onClick={onClick}>
-          {Title}
-        </S.Button>
-      </Link>
+    <S.ButtonContainer centralizedText={centralizedText}>
+      <S.Button disabled={isDisabled} onClick={onClick} uppercase={uppercase}>
+        {Title}
+      </S.Button>
     </S.ButtonContainer>
   );
 }
