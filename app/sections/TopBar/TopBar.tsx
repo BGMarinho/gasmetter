@@ -4,13 +4,11 @@ import * as S from './styles';
 export default function TopBar() {
   const topButtonsContent = [
     {
-      Title: 'Abastecimento',
-      Href: '#',
+      title: 'Abastecimento',
       isDisabled: false,
     },
     {
-      Title: 'Histórico',
-      Href: '#',
+      title: 'Histórico',
       isDisabled: false,
     },
   ];
@@ -20,9 +18,9 @@ export default function TopBar() {
       {topButtonsContent.map((button, index) => (
         <Button
           key={index}
-          Title={button.Title}
+          title={button.title}
           isDisabled={button.isDisabled}
-          centralizedText
+          centralizedText={false}
         />
       ))}
     </S.TopBarWrapper>

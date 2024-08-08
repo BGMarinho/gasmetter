@@ -7,8 +7,9 @@ export default function Fueling() {
     <S.FuelingSection>
       <Card>
         <Formulary
-          Title="Abastecimento"
-          Instructions="Preencha as informações sobre o seu abastecimento."
+          title="Abastecimento"
+          instructions="Preencha as informações sobre o seu abastecimento."
+          formAction=""
         >
           <label htmlFor="">posto</label>
           <input type="text" />

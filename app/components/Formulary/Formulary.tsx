@@ -1,25 +1,28 @@
-import { PropsWithChildren } from 'react';
+import React from 'react';
 import Button from '@/app/base-components/Button';
 import * as S from './styles';
 
 interface FormularyProps {
-  Title?: string;
-  Instructions?: string;
-  Action?: string;
+  title?: string;
+  instructions?: string;
+  formAction?: string;
+  children: React.ReactNode;
 }
 
-export default function Formulary(
-  { Title, Instructions, Action }: FormularyProps,
-  { children }: PropsWithChildren,
-) {
+export default function Formulary({
+  title,
+  instructions,
+  formAction,
+  children,
+}: FormularyProps) {
   return (
-    <S.FormularyWrapper action={Action}>
+    <S.FormularyWrapper action={formAction}>
       <S.FormularyInfo>
-        <h1>{Title}</h1>
-        <p>{Instructions}</p>
+        <h1>{title}</h1>
+        <p>{instructions}</p>
       </S.FormularyInfo>
       {children}
-      <Button Title="Salvar" />
+      <Button title="Salvar" />
     </S.FormularyWrapper>
   );
 }
