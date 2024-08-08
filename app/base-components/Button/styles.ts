@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 export const ButtonContainer = styled.div<{
-  centralize: boolean | undefined;
+  centralize?: boolean;
 }>`
   display: flex;
   justify-content: ${({ centralize }) =>
@@ -10,8 +10,8 @@ export const ButtonContainer = styled.div<{
   width: 100%;
 `;
 
-export const Button = styled.button<{ uppercase: boolean | undefined }>`
+export const Button = styled.button<{ caption?: string }>`
   all: unset;
-  text-transform: ${({ uppercase }) => (uppercase ? 'uppercase' : 'none')};
+  text-transform: ${({ caption }) => caption};
   font-size: 0.75rem;
 `;

@@ -5,11 +5,13 @@ export default function TopBar() {
   const topButtonsContent = [
     {
       title: 'Abastecimento',
-      isDisabled: false,
+      disabled: false,
+      caption: 'lowercase',
     },
     {
       title: 'Histórico',
-      isDisabled: false,
+      disabled: false,
+      caption: 'lowercase',
     },
   ];
 
@@ -19,8 +21,9 @@ export default function TopBar() {
         <Button
           key={index}
           title={button.title}
-          isDisabled={button.isDisabled}
-          centralizedText={true}
+          disabled={button.disabled}
+          caption={button.caption}
+          centralize
         />
       ))}
     </S.TopBarWrapper>
