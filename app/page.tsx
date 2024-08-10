@@ -2,6 +2,7 @@
 import styled from 'styled-components';
 import TopBar from './sections/TopBar';
 import Fueling from './sections/Fueling';
+import History from './sections/History';
 import Footer from './sections/Footer';
 
 const MainContent = styled.main`
@@ -17,6 +18,7 @@ export default function Home() {
     <MainContent>
       <TopBar />
       <Fueling />
+      <History />
       <Footer />
     </MainContent>
   );
