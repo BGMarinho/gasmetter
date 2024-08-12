@@ -6,10 +6,13 @@ import * as S from './styles';
 export default function TopBar() {
   const context = useContext(GlobalContext);
 
-  const handleClick = () =>
+  const handleClick = () => {
     context?.selectedSection === 'history'
       ? context.setSelectedSection('fueling')
       : context?.setSelectedSection('history');
+
+    console.log(context?.selectedSection);
+  };
 
   return (
     <S.TopBarWrapper>
@@ -18,20 +21,14 @@ export default function TopBar() {
         disabled={false}
         centralize
         caption="lowercase"
-        onClick={() => {
-          handleClick;
-          console.log(context?.selectedSection);
-        }}
+        onClick={handleClick}
       />
       <Button
         title="histórico"
         disabled={false}
         centralize
         caption="lowercase"
-        onClick={() => {
-          handleClick;
-          console.log(context?.selectedSection);
-        }}
+        onClick={handleClick}
       />
     </S.TopBarWrapper>
   );

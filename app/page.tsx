@@ -16,15 +16,12 @@ const MainContent = styled.main`
 `;
 
 export default function Home() {
+  const con = useContext(GlobalContext)?.selectedSection;
   return (
     <GlobalContextProvider>
       <MainContent>
         <TopBar />
-        {useContext(GlobalContext)?.selectedSection === 'fueling' ? (
-          <Fueling />
-        ) : (
-          <History />
-        )}
+        {con === 'fueling' ? <Fueling /> : <History />}
         <Footer />
       </MainContent>
     </GlobalContextProvider>
