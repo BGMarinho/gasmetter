@@ -11,7 +11,6 @@ export default function TopBar({
   selectedSection,
   setSelectedSection,
 }: TopBarProps) {
-  // Fazer uma função de handleClick para cada botão?
   const handleClick = () =>
     selectedSection === 'history'
       ? setSelectedSection('fueling')
