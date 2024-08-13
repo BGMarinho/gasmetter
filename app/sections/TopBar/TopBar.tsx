@@ -1,4 +1,4 @@
-import { Dispatch, SetStateAction, useEffect } from 'react';
+import { Dispatch, SetStateAction } from 'react';
 import Button from '../../base-components/Button';
 import * as S from './styles';
 
@@ -16,8 +16,6 @@ export default function TopBar({
     selectedSection === 'history'
       ? setSelectedSection('fueling')
       : setSelectedSection('history');
-
-  useEffect(() => console.log(selectedSection), [selectedSection]);
 
   return (
     <S.TopBarWrapper>
