@@ -22,7 +22,7 @@ export default function Formulary({
         <p>{instructions}</p>
       </S.FormularyInfo>
       {children}
-      <Button title="Salvar" />
+      <Button title="salvar" />
     </S.FormularyWrapper>
   );
 }
