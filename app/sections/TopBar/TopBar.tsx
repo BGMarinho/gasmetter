@@ -1,18 +1,23 @@
-import { useContext, useEffect } from 'react';
-import { GlobalContext } from '@/app/context/context';
+import { Dispatch, SetStateAction, useEffect } from 'react';
 import Button from '../../base-components/Button';
 import * as S from './styles';
 
-export default function TopBar() {
-  const context = useContext(GlobalContext);
+interface TopBarProps {
+  selectedSection: string;
+  setSelectedSection: Dispatch<SetStateAction<string>>;
+}
 
-  const handleClick = () => {
-    context?.selectedSection === 'history'
-      ? context.setSelectedSection('fueling')
-      : context?.setSelectedSection('history');
+export default function TopBar({
+  selectedSection,
+  setSelectedSection,
+}: TopBarProps) {
+  // Fazer uma função de handleClick para cada botão?
+  const handleClick = () =>
+    selectedSection === 'history'
+      ? setSelectedSection('fueling')
+      : setSelectedSection('history');
 
-    console.log(context?.selectedSection);
-  };
+  useEffect(() => console.log(selectedSection), [selectedSection]);
 
   return (
     <S.TopBarWrapper>

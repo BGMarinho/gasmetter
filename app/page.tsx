@@ -1,13 +1,12 @@
 'use client';
-import GlobalContextProvider, { GlobalContext } from './context/context';
 import styled from 'styled-components';
 import TopBar from './sections/TopBar';
 import Fueling from './sections/Fueling';
 import History from './sections/History';
 import Footer from './sections/Footer';
-import { useContext, useEffect } from 'react';
+import { useState } from 'react';
 
-const MainContent = styled.main`
+const MainContainer = styled.main`
   display: grid;
   height: 100%;
   grid-template-columns: 100%;
@@ -16,17 +15,16 @@ const MainContent = styled.main`
 `;
 
 export default function Home() {
+  const [selectedSection, setSelectedSection] = useState('fueling');
+
   return (
-    <GlobalContextProvider>
-      <MainContent>
-        <TopBar />
-        {useContext(GlobalContext)?.selectedSection === 'fueling' ? (
-          <Fueling />
-        ) : (
-          <History />
-        )}
-        <Footer />
-      </MainContent>
-    </GlobalContextProvider>
+    <MainContainer>
+      <TopBar
+        selectedSection={selectedSection}
+        setSelectedSection={setSelectedSection}
+      />
+      {selectedSection === 'fueling' ? <Fueling /> : <History />}
+      <Footer />
+    </MainContainer>
   );
 }
