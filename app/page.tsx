@@ -10,7 +10,7 @@ const MainContainer = styled.main`
   display: grid;
   height: 100%;
   grid-template-columns: 100%;
-  grid-template-rows: auto 1fr auto;
+  grid-template-rows: 30px 1fr auto;
   grid-row-gap: 3rem;
 `;
 

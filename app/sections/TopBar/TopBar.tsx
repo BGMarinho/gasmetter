@@ -22,15 +22,15 @@ export default function TopBar({
         title="abastecimento"
         disabled={false}
         onClick={handleClick}
-        $centralize="center"
         $caption="lowercase"
+        $centralize
       />
       <Button
         title="histórico"
         disabled={false}
         onClick={handleClick}
-        $centralize="center"
         $caption="lowercase"
+        $centralize
       />
     </S.TopBarWrapper>
   );

@@ -4,7 +4,7 @@ interface ButtonProps {
   title: string;
   disabled?: boolean;
   onClick?: () => void;
-  $centralize?: string;
+  $centralize?: boolean;
   $caption?: string;
 }
 
@@ -16,9 +16,13 @@ export default function Button({
   $caption,
 }: ButtonProps) {
   return (
-    <S.ButtonContainer $centralize={$centralize}>
+    <S.ButtonContainer>
       {!disabled ? (
-        <S.Button onClick={onClick} $caption={$caption}>
+        <S.Button
+          onClick={onClick}
+          $caption={$caption}
+          $centralize={$centralize}
+        >
           {title}
         </S.Button>
       ) : (
