@@ -1,7 +1,5 @@
 import type { Metadata } from 'next';
-import { Inter } from 'next/font/google';
-
-const inter = Inter({ subsets: ['latin'] });
+import Font from './font.module.css';
 
 export const metadata: Metadata = {
   title: 'Gasosa | Gasmetter',
@@ -16,7 +14,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={inter.className}
+        className={Font.globals}
         style={{ margin: 0, height: '100vh', width: '100vw' }}
       >
         {children}
