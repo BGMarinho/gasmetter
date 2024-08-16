@@ -12,6 +12,7 @@ const MainContainer = styled.main`
   grid-template-columns: 100%;
   grid-template-rows: 30px 1fr auto;
   grid-row-gap: 3rem;
+  background-color: #fafafa;
 `;
 
 export default function Home() {

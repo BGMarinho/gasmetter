@@ -7,7 +7,7 @@ export const FooterWrapper = styled.section`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: #000000;
+  background-color: #222222;
   color: #ffffff;
   line-height: 1rem;
   font-size: 0.75rem;
@@ -19,12 +19,13 @@ export const SocialNetworks = styled.div`
   display: flex;
   justify-content: center;
   align-items: start;
-  gap: 1rem;
+  gap: 1.5rem;
 `;
 
 export const Information = styled.div`
   font-size: 0.75rem;
   a {
     all: unset;
+    color: #8bc0f7;
   }
 `;
