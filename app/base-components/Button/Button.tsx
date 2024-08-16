@@ -2,18 +2,18 @@ import * as S from './styles';
 
 interface ButtonProps {
   title: string;
-  $centralize?: string;
-  $caption?: string;
   disabled?: boolean;
   onClick?: () => void;
+  $centralize?: string;
+  $caption?: string;
 }
 
 export default function Button({
   title,
-  $centralize,
-  $caption,
   disabled,
   onClick,
+  $centralize,
+  $caption,
 }: ButtonProps) {
   return (
     <S.ButtonContainer $centralize={$centralize}>
